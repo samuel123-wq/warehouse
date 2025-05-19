@@ -1,0 +1,60 @@
+RewriteEngine On
+
+#main
+RewriteRule ^main index.php [NC,L]
+
+
+# admin outbound
+RewriteRule ^out out_admin.php [NC,L]
+
+
+# user inbound outbound
+RewriteRule ^u_inout both.php [NC,L]
+RewriteRule ^all_inoutbound_history inoutbound_all_history_all.php [NC,L]
+RewriteRule ^bbound account_all_update_name.php [NC,L]
+RewriteRule ^retrieve inoutbound_user.php [NC,L]
+RewriteRule ^in_bound account_all_update_name_all.php [NC,L]
+
+#payment
+RewriteRule ^pays payment_user_pay_user.php [NC,L]
+RewriteRule ^am_history_payment payment_user_history_user.php [NC,L]
+RewriteRule ^paypal paymentpp.php [NC,L]
+RewriteRule ^card new2.php [NC,L]
+RewriteRule ^receipt receipt.php [NC,L]
+
+#Product
+RewriteRule ^a_add_product product_add_admin_user.php [NC,L]
+RewriteRule ^a_list_product product_admin_list_user.php [NC,L]
+RewriteRule ^a_pay_mana payment_admin_manager_history_user.php [NC,L]
+
+#All profile
+RewriteRule ^al_login account_all_login_all.php [NC,L]
+RewriteRule ^al_logout account_all_logout_all.php [NC,L]
+RewriteRule ^al_profile account_all_profile_all.php [NC,L]
+RewriteRule ^a_edit_account account_all_profile_edit_all.php [NC,L]
+RewriteRule ^a_update_password update_password.php [NC,L]
+
+#Account
+#Admin
+RewriteRule ^a_signup account_admin_signup_admin.php [NC,L]
+RewriteRule ^m_signup account_manager_signup_manager.php [NC,L]
+RewriteRule ^a_list_account account_admin_list_all.php [NC,L]
+RewriteRule ^a_approve account_admin_access.php [NC,L]
+
+#User
+RewriteRule ^u_reset_password account_user_reset_password_user.php [NC,L]
+RewriteRule ^OTP reset_passwordssss.php [NC,L]
+RewriteRule ^new_password passwordchanged.php [NC,L]
+RewriteRule ^u_signup account_user_signup_user.php [NC,L]
+
+
+#payment
+RewriteRule ^am_edit_payment payment_admin_manager_edit_user.php [NC,L]
+RewriteRule ^am_history_payment payment_admin_manager_history_user.php [NC,L]
+
+
+RewriteRule ^chart chart.php [NC,L]
+
+
+
+
